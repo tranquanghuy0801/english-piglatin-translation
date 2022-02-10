@@ -10,6 +10,7 @@ function isLowerCase(str) {
 
 export function translateEnglishToPigLatin(english) {
 	return english.split(' ').map(word => {
+		word = word.replace(/[^A-Za-z]/g, '');
 		let firstLetter = word.charAt(0);
 		if (vowels[firstLetter.toLowerCase()]) {
 			// vowel letter at the beginning of the word
