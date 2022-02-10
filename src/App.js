@@ -8,7 +8,8 @@ import Header from "./components/Header";
 import { translateEnglishToPigLatin } from "./scripts/helper";
 import { makeStyles } from "@material-ui/core";
 import { generateRandomString } from "./scripts/helper";
-import { TranslateOutlined, Create } from "@material-ui/icons";
+import { TranslateOutlined, Create} from "@material-ui/icons";
+import ClearIcon from '@material-ui/icons/Clear';
 
 const theme = createTheme({
   props: {
@@ -104,7 +105,7 @@ export default function App() {
 					color="secondary"
 					className={classes.button}
 					onClick={() => handleClickClear()}
-					startIcon={<Create />}
+					startIcon={<ClearIcon />}
 				>
 					Clear
 				</Button>
